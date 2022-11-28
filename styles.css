@@ -1,5 +1,5 @@
 @font 
-    font-family: 'header';
+    font-family: 'PROPHET';
     src: url(/HEADOH__.TTF)
 body {
     margin: 0;
@@ -10,6 +10,6 @@ body {
     text-align: center;
 }
 h1 {
-    font-family: 'header';
+    font-family: 'PROPHET';
     font-size: 6em;
 }

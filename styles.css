@@ -1,6 +1,6 @@
 @font 
     font-family: 'header';
-    src: url()
+    src: url(/HEADOH__.TTF)
 body {
     margin: 0;
     background-image: url("https://i.imgur.com/KjbZBXY.jpg");
@@ -8,4 +8,8 @@ body {
     background-position: centre;
     background-attachment: scroll;
     text-align: center;
+}
+h1 {
+    font-family: 'header' , sans-serif;
+    font-size: 6em;
 }

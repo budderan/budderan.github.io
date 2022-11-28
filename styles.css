@@ -1,3 +1,6 @@
+@font 
+    font-family: 'header';
+    src: url()
 body {
     margin: 0;
     background-image: url("https://i.imgur.com/KjbZBXY.jpg");

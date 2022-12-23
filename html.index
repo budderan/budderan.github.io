@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chore Tracker</title>
+</head>
+<body>
+  <h1>Chore Tracker</h1>
+  <form>
+    <label for="chore">Enter a new chore:</label><br>
+    <input type="text" id="chore" name="chore"><br>
+    <button type="submit">Add Chore</button>
+  </form> 
+  <h2>Pending Chores:</h2>
+  <ul id="pending-chores">
+  </ul>
+  <h2>Completed Chores:</h2>
+  <ul id="completed-chores">
+  </ul>
+  <script>
+    const form = document.querySelector('form');
+    const pendingChoresList = document.querySelector('#pending-chores');
+    const completedChoresList = document.querySelector('#completed-chores');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const chore = event.target.chore.value;
+      const li = document.createElement('li');
+      li.textContent = chore;
+      pendingChoresList.appendChild(li);
+      form.reset();
+    });
+
+    pendingChoresList.addEventListener('click', (event) => {
+      const li = event.target;
+      completedChoresList.appendChild(li);
+    });
+  </script>
+</body>
+</html>

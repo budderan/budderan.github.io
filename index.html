@@ -16,10 +16,12 @@
   <h2>Completed Chores:</h2>
   <ul id="completed-chores">
   </ul>
+  <button id="clear-completed">Clear Completed</button>
   <script>
     const form = document.querySelector('form');
     const pendingChoresList = document.querySelector('#pending-chores');
     const completedChoresList = document.querySelector('#completed-chores');
+    const clearCompletedButton = document.querySelector('#clear-completed');
 
     form.addEventListener('submit', (event) => {
       event.preventDefault();
@@ -33,6 +35,10 @@
     pendingChoresList.addEventListener('click', (event) => {
       const li = event.target;
       completedChoresList.appendChild(li);
+    });
+
+    clearCompletedButton.addEventListener('click', () => {
+      completedChoresList.innerHTML = '';
     });
   </script>
 </body>
